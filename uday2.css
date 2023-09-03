@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+body {
+    background-color: #343F4F;
+}
+
+/* .box{
+    width:70px;
+    height:70px;
+    background-color: rgba(30, 30, 87, 0.514);
+    border:1px solid  rgba(30, 30, 87, 0.514);
+    border-radius: 5px;
+    position:relative;
+    animation-name:box_dump;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+} */
+.box2 {
+    width: 0px;
+    height: 0px;
+    background-color: rgba(30, 30, 87, 0.514);
+    border: 1px solid rgba(30, 30, 87, 0.514);
+    border-radius: 5px;
+    position: relative;
+    top: 440px;
+    left: 1260px;
+    animation-name: box_dump2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode:backwards; */
+    animation-direction: alternate-reverse;
+}
+
+/* @keyframes box_dump {
+    from{
+       top:0px;
+       left:0px;
+    }
+    to{
+  top:500px;
+ 
+    }
+} */
+/* @keyframes box_dump2{
+    from{
+       top:440px;
+       left:1260px;
+    }
+    to{
+  top:-44px;
+ 
+    }
+} */
+
+.next_page {
+    position: relative;
+    top: 547px;
+    left: 50%;
+}
+
+@media (max-width:700px) {
+    .next_page {
+        left: 40%;
+    }
+
+    .effect_text {
+        left: 40%;
+    }
+}
+
+#next_page_text {
+    color: rgb(248, 219, 88);
+    font-size: 20px;
+    font-family: 'Gruppo', sans-serif;
+    font-weight: 14px;
+    border: 1px dotted rgb(248, 219, 88);
+    border-radius: 5px;
+    width: fit-content;
+}
+
+a {
+    color: white;
+}
+
+/* .lines{
+   width:8px;
+   height:4px;
+   background-color:rgba(241, 16, 8, 0.295);
+   border:1px solid rgba(30, 30, 87, 0.514);
+   border-bottom: 8px;
+   position:relative;
+   top:-150px;
+   left:0px;
+   animation-name:line_dump1;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode:backwards; */
+/* animation-direction: alternate-reverse;
+}  */
+/* @keyframes line_dump1 {
+    from{
+        width:0px;
+    }
+    to{
+        width:100%;
+    }
+} */
+.typing {
+
+    color: white;
+    width: 0px;
+
+    border-right: 2px solid yellow;
+    overflow: hidden;
+    position: relative;
+    left: 15%;
+    top: 230px;
+    animation-name: sp;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+    font-size: 60px;
+    font-family: 'Gruppo', sans-serif;
+    animation-direction: alternate;
+    font-weight: 40px;
+    user-select: none;
+    animation-timing-function: steps(45, end);
+    z-index: 1111111111111111111111111111;
+}
+
+@keyframes sp {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 72%;
+    }
+
+}
+
+@media(max-width:700px) {
+    body {
+        background-color: #343F4F;
+
+    }
+
+    .typing {
+        font-size: 18.5px;
+        left: 6%;
+        width: 79%;
+    }
+
+    /* body::after{
+        content: "go home";
+        font-size: 40px;
+        background-color: red;
+    } */
+}
+
+@media(max-width:700px) {
+    .box2 {
+
+        left: 200px;
+    }
+
+    /* .uday2_image{
+        left:-10%;
+    } */
+}
+
+#monkey {
+    position: relative;
+    width: 45px;
+    height: 35px;
+    top: 400px;
+    left: 50%;
+    border: 1px solid white;
+    border-radius: 13px;
+}
+
+.effect::after {
+    content: " ";
+    background-color: rgb(12, 12, 12);
+    border: 1px solid rgb(12, 12, 12);
+    border-radius: 8px;
+    width: 110px;
+    height: 20px;
+    position: absolute;
+    top: 579px;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#effect_text {
+    position: absolute;
+    /* top:579px;   */
+    top: 570px;
+    left: 50.1%;
+    text-decoration: none;
+    color: rgb(175, 160, 93);
+    font-size: 20px;
+    font-family: 'Gruppo', sans-serif;
+    font-weight: 14px;
+    opacity: 0;
+    user-select: none;
+    transition: all 1s ease-in-out;
+}
+
+/* .ccc:hover .effect::after{
+   opacity:1;
+   
+}
+.ccc:hover #effect_text{
+    opacity:1;
+    top:577px;
+    z-index: 56;
+} */
+
+
+.ccc:hover .effect::after {
+    opacity: 1;
+
+}
+
+.ccc:hover #effect_text {
+    opacity: 1;
+    top: 577px;
+    z-index: 56;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+@media (max-width:700px) {
+
+    .uday_image {
+        left: -40%;
+    }
+}
+
+.bubbles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.bubbles div:nth-child(even) {
+    background-color: #ff2d7f;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px#ff2d7544,
+        0 0 50px #ff2d75,
+        0 0 100px #ff2d75;
+}
+
+.buble_1 {
+
+    background-color: #4fc3dc;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin: 0 4px;
+    display: flex;
+}
+
+.buble_2 {
+    width: 7px;
+    height: 7px;
+    background-color: #4fc3dc;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.buble_3 {
+    width: 7px;
+    height: 7px;
+    background-color: #4fc3dc;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.bbb {
+    position: relative;
+    /* top:300px; */
+    animation-name: bubbles_move;
+    animation-duration: 920s;
+    animation-iteration-count: infinite;
+    /* animation-direction:alternate; */
+
+    animation-duration: calc(900s / var(--i));
+    box-shadow: 0 0 0 10px #4fc3dc44,
+        0 0 50px #4fc3dc,
+        0 0 100px #4fc3dc;
+}
+
+@keyframes bubbles_move {
+    0% {
+        top: 250px;
+        transform: scale(0);
+        margin: 4px;
+    }
+
+    100% {
+        top: -600px;
+        transform: scale(0.5);
+
+        margin: 8px;
+    }
+}
+
+.uday_image {
+    width: 180px;
+    height: 180px;
+    z-index: 555555555555555555555777777777777777777777777777777755555;
+    border-radius: 50%;
+    position: relative;
+    left: 45%;
+    top: -10px;
+    animation-name: udayimage;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    user-select: none;
+}
+
+@keyframes udayimage {
+
+
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.uday2_image {
+    z-index: 999999999999999999999999999999999999999999999999999999;
+}
+
+.text_continue {
+    position: fixed;
+    top: 85%;
+    left: 50%;
+}
+
+.text_continue p a {
+    text-decoration: none;
+}
+
+.text_continue a {
+    font-family: 'Gruppo', sans-serif;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 4px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #37497996;
+    color: rgb(201, 201, 40);
+    transition: all 0.5s ease-in-out;
+}
+
+.text_continue p a:hover {
+    color: rgb(255, 0, 0);
+    background-color: rgb(199, 144, 144);
+}
+
+@media(max-width:450px) {
+    .text_continue {
+        left: 40%;
+
+    }
+}

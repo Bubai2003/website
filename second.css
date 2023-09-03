@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Cormorant:ital@1&family=EB+Garamond&family=Gruppo&family=Montserrat:ital,wght@0,200;1,100&family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto+Mono:wght@200&family=Roboto+Slab&family=Srisakdi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Cormorant:ital@1&family=EB+Garamond&family=Gruppo&family=Montserrat:ital,wght@0,200;1,100&family=Playfair+Display:ital@1&family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto+Mono:wght@200&family=Roboto+Slab&family=Srisakdi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Charm&family=Cormorant:ital@1&family=EB+Garamond&family=Gruppo&family=Montserrat:ital,wght@0,200;1,100&family=Playfair+Display:ital@1&family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto+Mono:wght@200&family=Roboto+Slab&family=Srisakdi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Charm&family=Cormorant:ital@1&family=EB+Garamond&family=Gruppo&family=Montserrat:ital,wght@0,200;1,100&family=Playfair+Display+SC&family=Playfair+Display:ital@1&family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto+Mono:wght@200&family=Roboto+Slab&family=Srisakdi&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+}
+.heading{
+    background-color: rgb(22, 21, 66);
+    position:fixed;
+    width:100%;
+    height:7vh;
+   
+}
+.heading li{
+    display: inline-block;
+    margin:3px;
+    position:relative;
+    margin-top:5px;
+}
+.heading li a{
+    text-decoration: none;
+    color: white;
+    font-size:19px;
+    /* border:1px solid white; */
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display SC', serif;
+    /* font-family: 'Gruppo', sans-serif; */
+    font-weight: 900px;
+    border-radius: 12px;
+    padding:3px;
+    transition: all 0.4s ease-in-out;
+    /* font-family: 'EB Garamond', serif; */
+    user-select: none;
+}
+.heading li a:hover::after{
+  opacity: 1;
+  top:-5px;
+  /* transform: scaleY(1.2); */
+}
+.heading li a::after{
+    content: " ";
+    background-color:rgb(255, 255, 255);
+    /* border-radius: 12px; */
+    position: absolute;
+    top:-16px;
+    left:0px;
+    width:100%;
+    height:7vh;
+    opacity:0;
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+.heading li a:hover{
+   /* font-size: 22px; */
+   color: rgb(22, 21, 66);
+   /* border:1px solid yellow; */
+   border-radius: 12px;
+}
+.heading li a:hover .dd{
+    /* transform: scale(1.2); */
+    top:3px;
+}
+.dd{
+    position: relative;
+    top:5px;
+}
+.heading ul{
+    position:relative;
+    text-align: center;
+}
+
+@media(max-width:500px){
+    .heading li{
+           display: none;
+    }
+   
+   
+}
+.checking_1{
+    /* position: relative;
+    top:50px;
+    left:10px; */
+    display: none;
+}
+/* .checking input[type="checkbox"] :checked ~ .checking_1{
+    display:block;
+} */
+.checking input[type="checkbox"]:checked ~ .checking_1{
+    
+    display: block;
+}
+.checking input[type="checkbox"]:checked ~ .arrow{
+    
+    transform: rotate(180deg);
+    display: block;
+}
+.check_1{
+    transform: scaleX(3.5);
+    position: relative;
+    top:-28px;
+    left:34px;
+    opacity: 0;
+    z-index: 2;
+}
+@media(max-width:500px){
+    .check_1{
+           top:-11px;
+           left:40px;
+           transform: scaleX(3.5);
+         left:28px;
+}
+.checking  {
+     top:23px;        
+}
+.arrow{
+   top:5px;
+}
+.line{
+   
+    margin:1px;
+
+}
+}
+.checking_1{
+    background-color: black;
+    width:fit-content;
+    height:fit-content;
+    padding:9px;
+}
+.data{
+    position:fixed;
+    top:11px;
+    left:20px;
+    z-index:1 ;
+    
+}
+.data p{
+    color:white;
+    font-family: 'Gruppo', sans-serif;
+    font-size: 18px;
+}
+/* .arrow{
+    position:absolute;
+    top:2px;
+    left:48px;
+    z-index:1 ;
+    /* display: none; */
+/* } */ 
+.arrow{
+    position:absolute;
+    top:-16%;
+    left:65px;
+    color:red;
+    font-size: 22px;
+    transform: rotate(180deg);
+}
+.checking{
+    margin-left:6px;
+    /* margin-top:-12px; */
+    position: relative;
+}
+.checking_1 a{
+    text-decoration: none;
+    color:white;
+    margin:12px;
+    font-family: 'Gruppo', sans-serif;
+    font-size: 18px;
+    margin-left:20px;
+}
+.checking_1 a:hover{
+    color:rgba(156, 40, 156, 0.918);
+}
+.line{
+    width:160px;
+    height:1px;
+    background-color: rgba(255, 255, 255, 0.61);
+    margin:13px;
+margin-left:20px;
+}
+.data_1{
+    margin-top:25px;
+}
+.name{
+    width:0px;
+    white-space: nowrap;
+    margin:12px;
+    margin-top:5px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Gruppo', sans-serif;
+    font-size:25px;
+    overflow: hidden;
+    color:rgb(50, 201, 181);
+    border-right: 1px solid yellow;
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: steps(45,end);
+}
+@keyframes typing {
+from{
+        width:0px;
+    }
+    to{
+        width:90%;
+    }
+}
+.check22{
+    position: fixed;
+    top:10px;
+    left:95%;
+}
+.check223{
+    width:100%;
+    height:20px;
+}
+.menu_23{
+    background-color: black;
+    position: relative;
+    top:20px;
+    left:-35px;
+    display:none;
+}
+.check223{
+    position:fixed;
+    left:171px;
+    transform:scaleX(2.5);
+    display: none;
+    opacity: 0;
+    z-index: 1;
+    text-align: center;
+}
+.check22 input[type="checkbox"]:checked ~ .menu_23{
+    
+    /* transform: rotate(180deg); */
+    display: block;
+}
+@media(max-width:500px){
+    .check223{
+        display:block
+    }
+    .check22 input[type="checkbox"]:checked ~ .menu_23{
+    
+        /* transform: rotate(180deg); */
+        display: block;
+    }
+   
+    .menuy p{
+        display: block;
+    }
+    .image_2{
+        display:none;
+    }
+    .image_3{
+        display: block;
+    }
+}
+.menuy{
+    position:fixed;
+    top:11px;
+    left:82%;
+    text-align: center;
+    font-family: 'Gruppo', sans-serif;
+    font-size: 18px;
+    
+}
+.menuy p{
+    color:white;
+    /* display: none; */
+}
+.menu_data1{
+    display: none;
+}
+.image_2{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    position: fixed;
+    top:2px;
+    left:96%;
+}
+.image_3{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    position: relative;
+    /* top:2px;
+    left:0%;
+    display:none; */
+    display:none;
+}
+.image_1::after{
+    content:" ";
+    position:absolute;
+    width:40px;
+    height:40px;
+    background-color: rgba(24, 23, 23, 0.521);
+    border-radius: 50%;
+    top:-22px;
+    left:96%;
+   opacity: 0;
+   transition:all 0.4s ease-in-out;
+}
+.image_1:hover::after{
+    top:2px;
+    opacity: 1;
+}
